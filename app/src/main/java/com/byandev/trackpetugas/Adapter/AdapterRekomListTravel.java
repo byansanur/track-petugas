@@ -37,7 +37,7 @@ public class AdapterRekomListTravel extends RecyclerView.Adapter<AdapterRekomLis
   @NonNull
   @Override
   public AdapterRekomListTravel.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rekom_kuliner, null);
+    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rekom_travel, null);
     mApiService = UtilsApi.getAPIService();
     sharedPrefManager = new SharedPrefManager(context);
     return new AdapterRekomListTravel.ViewHolder(view);
